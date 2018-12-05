@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: This collection is very much a work in progress. I am working to add more projects
+description: This collection is very much a work in progress. I am working to add more content.
 ---
 
 {% for project in site.projects %}
