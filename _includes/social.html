@@ -1,5 +1,10 @@
 <div class="social">
   <span class="contacticon center">
+    <!--I'm not sure why I had to add this-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <a href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i></a>
     {% if site.orcid_id %}<a href="https://orcid.org/{{ site.orcid_id }}" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>{% endif %}
     {% if site.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
