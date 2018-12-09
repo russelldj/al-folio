@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>David Russell</title>
+  <title>David Russell | Driver alert system</title>
   <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/projects/1_project/">
 </head>
 
 
@@ -82,56 +82,26 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="header-bar">
-  <h1>al-folio</h1>
-  <h2>a simple whitespace theme for academics</h2>
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Driver alert system</h1>
+    <h5 class="post-description">Using CV to keep drivers safe</h5>
+  </header>
+
+  <article class="post-content Driver alert system clearfix">
+    <p>This is a project which I am working on with <a href="https://www.linkedin.com/in/jada-flanagan-5b6866153/">Jada Flanagan</a> and it’s still in its early stages. The basic idea is to leverage the recent advances in computer vsion and edge computing to create a retrofit kit which can be placed in a car to alert the driver to dangerous situations on the road. This device would have a forward looking camera, mounted either in the grille or secured to the dashboard, and would alert the driver to threats with some combination of light and sound. Some initial tasks I would like to accomplish are detecting when the car is leaving the lane, when there is a pedestrian entering the road, or when when the driver is too close to a car in front.</p>
+
+<p>I have purchased a NVIDIA Jetson TX2 and plan to begin doing more work over winter break. It seems that simple geometric vision techniques such as color-based segmentation and the Hough transform can be used to extract the lines with fairly high accuracy. This means that the first task should be fairly simple and run easily in real-time. The latter two tasks could be accomplishes with any one of a number of deep convoltional neural networks, such as <a href="https://github.com/facebookresearch/Detectron">Mask R-CNN</a> or <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md">Mobilenent</a>. Because of the computational constrainsts, it is likely we will have to make some tradeoffs between framerate and accuracy. However, given reasonably-good detections, it should be possible to understand whether the objects are in the lane and if they pose a threat.</p>
+
+
+  </article>
+
+  
+
+  
+
 </div>
-
-
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h2>
-      <p class="post-meta">October 20, 2015 — 11:59</p>
-      <p>an example of a blog post with comments</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/math/">a post with math</a></h2>
-      <p class="post-meta">October 20, 2015 — 11:12</p>
-      <p>an example of a blog post with some math</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/code/">a post with code</a></h2>
-      <p class="post-meta">July 15, 2015 — 11:09</p>
-      <p>an example of a blog post with some code</p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2015/images/">a post with images</a></h2>
-      <p class="post-meta">May 15, 2015 — 17:01</p>
-      <p>this is what included images could look like</p>
-    </li>
-  
-</ul>
-
-
-<div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
-  </div>
-  <div class="right">
-    
-      <a class="pagination-item" href="/blog/page2/">Older</a>
-    
-  </div>
-  <div class="pagination-meta">Page 1 of 2</div>
-</div>
-
-
 
       </div>
     </div>
