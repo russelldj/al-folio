@@ -1,3 +1,6 @@
+---
+frontmatter : this is required to be processed by jekyll for the include
+---
 <!DOCTYPE html>
 <html>
 
@@ -23,7 +26,7 @@
 
   <div class="wrapper">
 
-    
+
 
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -38,34 +41,7 @@
         </label>
 
       <div class="trigger">
-        <!-- About -->
-        <a class="page-link" href="/">about</a>
-
-        <!-- Blog -->
-        <!-- <a class="page-link" href="/blog/">blog</a> -->
-
-        <!-- Pages -->
-        
-          
-        
-          
-        
-          
-        
-          
-            <a class="page-link" href="/projects/">projects</a>
-          
-        
-          
-        
-          
-        
-          
-        
-
-        <!-- CV link -->
-        <a class="page-link" href="/assets/David_Russell_Resume_2018.pdf">resume</a>
-
+        {% include header.html %}
       </div>
     </nav>
 
@@ -85,27 +61,28 @@
   </header>
 
   <article class="post-content <strong>David</strong> Russell clearfix">
-    
+
   <div class="profile col one left">
-    
-      <img class="one" src="/assets/img/prof_pic.jpg">
-    
-    
+
+      <img class="one" src="/assets/img/profile_pic.jpg" style="transform:rotate(90deg);">
+
+
+
   </div>
 
 
-<p>I am currently spending a semester as a research assistant in the Robotics Institute at Carnegie Mellon, under the advisement of <a href="https://www.ri.cmu.edu/ri-faculty/martial-hebert/">Dr. Martial Hebert</a>. In the spring I will return to Clarkson University to finish my Bachelor’s Degree in Computer Science and I plan to graduate in May 2020.</p>
+<p> I am a senior at Clarkson University majoring in Computer Science. I've spent two stints as a research assistant at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at Carnegie Mellon, and as an intern at <a href="https://www.kitware.com/computer-vision-team/">Kitware</a> and <a href="https://phantom.ai/">Phantom AI</a>.</p>
 
-<p>Currently most of my work is in computer vision, but I am interested in branching out into planning, control, and inteligent infastructure. I am looking for an internship for the summer of 2019 in either industry or academia. Additionally, I am happy to work on side projects during the semester, so if you have something you would like to collaborate on or a problem you’d like me to take a stab at, feel free to reach out.</p>
+<p>Most of my work has been in computer vision, sensing, and robotics, but I am broadly interested in machine learning and optimization. I am happy to work on side projects during the semester, so if you have something you would like to collaborate on or a problem you’d like me to take a stab at, feel free to reach out.</p>
 
-<p>I also enjoy the outdoors and am somewhat competent at rowing, rock climbing, and skiing. This has made me interested in projects, technical or otherwise, with a an environmental focus.</p>
+<p>I enjoy sports and the outdoors and try to spend as much time possible rowing, rock climbing, skiing, and hiking. While these experiences are rewarding and fun, it is also deeply sad to witness firsthand the increasing degradation of our planet. I am intersted in working on conservation and sustainability efforts in either a technical or non-technical role.</p>
 
 
   </article>
 
-  
 
-  
+
+
     <div class="social">
   <span class="contacticon center">
     <!--I'm not sure why I had to add this-->
@@ -114,12 +91,12 @@
       data-auto-a11y="true"
     ></script>
     <a href="mailto:%72%75%73%73%65%6C%64%6A@%63%6C%61%72%6B%73%6F%6E.%65%64%75"><i class="fas fa-envelope"></i></a>
-    
-    
+
+
     <a href="https://github.com/russelldj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/david--russell" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    
-    
+
+
   </span>
 
   <div class="col three caption">
@@ -128,7 +105,7 @@
   </div>
 </div>
 
-  
+
 
 </div>
 
@@ -136,16 +113,7 @@
     </div>
 
     <footer>
-
-  <div class="wrapper">
-    &copy; Copyright 2018 David Russell.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-
-    
-        Last updated: December 2018.
-    
-  </div>
-
+      {% include footer.html %}
 </footer>
 
 

@@ -1,6 +1,3 @@
----
-frontmatter : this is required to be processed by jekyll for the include
----
 <!DOCTYPE html>
 <html>
 
@@ -9,14 +6,14 @@ frontmatter : this is required to be processed by jekyll for the include
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>David Russell | projects</title>
+  <title>David Russell | Makerpsace Usage</title>
   <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/projects/">
+  <link rel="canonical" href="/projects/4_project/">
 </head>
 
 
@@ -46,7 +43,18 @@ frontmatter : this is required to be processed by jekyll for the include
         </label>
 
       <div class="trigger">
-      {% include header.html %}
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="/blog/">blog</a> -->
+
+        <!-- Pages -->
+            <a class="page-link" href="/projects/">projects</a>
+
+        <!-- CV link -->
+        <a class="page-link" href="/assets/David_Russell_Resume_2018.pdf">resume</a>
+
       </div>
     </nav>
 
@@ -61,92 +69,44 @@ frontmatter : this is required to be processed by jekyll for the include
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">projects</h1>
-    <h5 class="post-description">This collection is very much a work in progress. I am working to add more content.</h5>
+    <h1 class="post-title">Makerspace Usage</h1>
+    <h5 class="post-description">Obtain data on a new space</h5>
   </header>
 
-  <article class="post-content projects clearfix">
+  <article class="post-content Kinect 3D reconstruction clearfix">
+  Clarkson University recently installed a new makerspace to facilitate student,
+  faculty, and staff projects. Given that it was a new space, and various decisions about organization,
+  open hours, and equipment purchasing had to be made, we sought to provide administrators with quantitative
+  data about utilization patterns. The system provides a heatmap visualization demonstrating the frequency of
+  utilization over a period of time. This will be presented in an easy-to-use website, to make the data easily
+  accessible. This work won the 2019 Clarkson University President's Challenge, for a grand prize of $7,000. Code is released under the GPL-3 licence on
+   <a href="https://github.com/russelldj/makerspace-utilization"> GitHub</a>. Additional content from the contest can be found here:
 
-<!--
-<div class="project ">
-    <div class="thumbnail">
-        <a href="/projects/1_project/">
+  <a href="https://github.com/russelldj/makerspace-utilization/blob/master/data/slides/Presentation.pdf"> Slides</a>,
+  <a href="https://youtu.be/c_1fbtPzoIA"> Video</a>,
+  <a href="https://github.com/russelldj/makerspace-utilization/blob/master/data/Report.pdf"> Report</a>,
+  <a href="https://people.clarkson.edu/~gwinndr"> Demo Website </a>.
+<p><img src="/assets/img/Makerspace3D.png" /></p>
 
-        <img class="thumbnail" src="/assets/img/Jetson.jpg" />
-
-        <span>
-            <h1>Driver alert system</h1>
-            <br />
-            <p>Using CV to keep drivers safe</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="/projects/2_project/">
-
-        <img class="thumbnail" src="/assets/img/Subaru.jpg" />
-
-        <span>
-            <h1>Full-scale limited autonomy</h1>
-            <br />
-            <p>Making my car self-driving</p>
-        </span>
-        </a>
-    </div>
-</div>
--->
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="/projects/3_project/">
-
-        <img class="thumbnail" src="/assets/img/Hunter.jpg" />
-
-        <span>
-            <h1>Kinect 3D reconstruction</h1>
-            <br />
-            <p>Sychronizing Kinects for motion capture</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="/projects/4_project/">
-
-        <img class="thumbnail" src="/assets/img/Makerspace3D.png" />
-
-        <span>
-            <h1>Makerspace Usage</h1>
-            <br />
-            <p>Obtain data on a new space</p>
-        </span>
-        </a>
-    </div>
-</div>
-
+<p>Some more stuff.</p>
 
   </article>
-
-
-
-
 
 </div>
 
       </div>
     </div>
-  </div>
-<footer class="site-footer">
-  {% include footer.html %}
-</footer>
 
     <footer>
-      {% include footer.html %}
+
+  <div class="wrapper">
+    &copy; Copyright 2018 David Russell.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+
+        Last updated: December 2018.
+
+  </div>
 
 </footer>
 
@@ -162,8 +122,6 @@ frontmatter : this is required to be processed by jekyll for the include
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
 <script src="/assets/js/katex.js"></script>
-
-
 
 
 <!-- Include custom icon fonts -->
